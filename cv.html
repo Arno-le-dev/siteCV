@@ -23,18 +23,33 @@
 
 
    		<div>
-   			<button class="boutonNav">À PROPOS DE MOI</button>
-   			<button class="boutonNav">CV</button>
-   			<button class="boutonNav">PROJETS</button>
-   			<button class="boutonNav">CENTRES D'INTÉRÊTS</button>
+   			<button class="boutonNav" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/index.html'">ACCUEIL</button>
+   			<button class="boutonNav" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/cv.html'">CV</button>
+   			<button class="boutonNav" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/projets.html'">PROJETS</button>
+   			<button class="boutonNav" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/centre_interet.html'">CENTRES D'INTÉRÊTS</button>
    		</div>
 
    </header>
    			<!-- FIN HEADER -->
       <div class="bodyCV">
       
+         <div class="titre_CV"> 	
+            <div class="carre_entete">
+            </div>		
+               <h1><strong>CV</strong></h1>
+            </div>
 
-            <div class="item">
+            <div class="titre_section">
+               <h4 id="experience"><strong>Expérience</strong></h4>
+               <a class="bouton_download_cv" id="bouton_download_cv" href="download/CV_BRUNO_Arno.pdf"><strong>Télécharger mon CV</strong></a>
+            </div>
+
+
+
+            <div class="item" id="premier_item">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logoOBS.png" alt="Logo Orange Business Services" id="logoOBS">
+               </div>
                <div class="colonne">
                <p class="date"><strong>08/2021 - 01/2022</strong></p>
                <p class="position"><strong>Consultant junior infrastructure IT & Réseau</strong></p>
@@ -43,12 +58,14 @@
                </div>
                <div class="colonne" id="colonne_droite"> 
                  <p>DevOps / Infrastructure as Code  Consulting / Relationnel</p> 
-                 <img src="images/logoOBS.png" alt="Logo Orange Business Services" id="logoOBS">
                </div>
             </div>
 
 
             <div class="item" id="itemESC">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logo_ESC.jpeg" alt="Logo Orange Business Services" id="logoOBS">
+               </div>
                <div class="colonne">
                <p class="date"><strong>09/2020 - 08/2021</strong></p>
                <p class="position"><strong>Président</strong></p>
@@ -67,25 +84,141 @@
                </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item_L1PT">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logo_L1PT.webp" alt="Logo Orange Business Services" id="logoOBS">
+               </div>
                <div class="colonne">
-               <p class="date"><strong>08/2021 - 01/2022</strong></p>
-               <p class="position"><strong>Consultant junior infrastructure IT & Réseau</strong></p>
-               <p class="entreprise">Orange Business Services (OBS)</p>
-               <p class="localisation">Paris - France</p>
+               <p class="date"><strong>2019 - 2021</strong></p>
+               <p class="position"><strong>Co-fondateur & business developer</strong></p>
+               <p class="entreprise">Les 1 Pour TOUS</p>
+               <p class="localisation">Montpellier - France</p>
                </div>
                <div class="colonne" id="colonne_droite"> 
-                 <p>DevOps / Infrastructure as Code  Consulting / Relationnel</p> 
-                 <img src="images/logoOBS.png" alt="Logo Orange Business Services" id="logoOBS">
+                 <p>Les 1 pour TOUS est une association dédiée à la 
+                  récolte de fonds et au financement de projets 
+                  associatifs locaux. <br> 
+                  Le rôle de responsable commercial incombe : <br>
+                  <ul>
+                   <li> Gestion d’une équipe de 6 commerciaux</li>
+                   <li> Définition, application et suivi d’une stratégie commerciale</li>
+                   <li>Prospection d’entreprise</li>
+                  </ul>             
+               </p> 
                </div>
             </div>
 
-           
+            <div class="titre_section">
+               <h4 id="formation"><strong>Formation</strong></h4>
+            </div>
 
+            <div class="item" id="item_EPF">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logo_EPF.jpeg" alt="Logo EPF école d'ingénieur-e-s" id="logoOBS">
+               </div>
+               <div class="colonne">
+               <p class="date"><strong>2022 - Maintenant</strong></p>
+               <p class="position"><strong>EPF école d'ingénieur-e-s, Paris</strong></p>
+               <p class="entreprise">Diplôme d'ingénieur généraliste - Spécialité Ingénierie & Numérique</p>
+               <button class="boutton_bleu" id="btn_en_savoir_plus" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/download/ingenierie_et_numerique.pdf'">En savoir plus</button>
+                </div>
+               <div class="colonne" id="colonne_droite"> 
+                 <p><strong>Enseignements principaux:</strong> <br> 
+                  <ul>
+                     <li>Java</li>
+                     <li>Matériels mobiles (Kotlin)</li>
+                     <li>Git & le contrôle de version</li>
+                     <li>Systèmes Unix / Linux</li>
+                     <li>Cybersécurité</li>
+                     <li>Réseaux & infrastructures</li>
+                  </ul>
+               </p> 
+                 
+               </div>
+            </div>
 
+            <div class="item" id="item_EPF">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logo_EPF.jpeg" alt="Logo EPF école d'ingénieur-e-s" id="logoOBS">
+               </div>
+               <div class="colonne">
+               <p class="date"><strong>2018 - 2021</strong></p>
+               <p class="position"><strong>EPF école d'ingénieur-e-s, Montpellier</strong></p>
+               <p class="entreprise">Licence - cycle généraliste</p>
+               <button class="boutton_bleu" id="btn_en_savoir_plus" onclick="window.location.href="">En savoir plus</button>
+                </div>
+               <div class="colonne" id="colonne_droite"> 
+                 <p><strong>Enseignements principaux:</strong> <br> 
+                  <ul>
+                     <li>Mathématiques & modélisation</li>
+                     <li>Physique & chimie</li>
+                     <li>Numérique</li>
+                     <li>Énergie</li>
+                     <li>Sciences de l'ingénieur</li>
+                  </ul>
+               </p> 
+                 
+               </div>
+            </div>
 
+            <div class="item" id="item_EPF">
+               <div class="colonne" id="colonne_logo">
+                  <img src="images/logo_MQUni.png" alt="Logo Macquarie University" id="logoOBS">
+               </div>
+               <div class="colonne">
+               <p class="date"><strong>2017 - 2018</strong></p>
+               <p class="position"><strong>Macquarie University, Sydney</strong></p>
+               <p class="entreprise">Study abroad program</p>
+               <button class="boutton_bleu" id="btn_en_savoir_plus" onclick="window.location.href="">En savoir plus</button>
+                </div>
+               <div class="colonne" id="colonne_droite"> 
+                 <p><strong>Enseignements principaux:</strong> <br> 
+                  <ul>
+                     <li>English Language Program</li>
+                     <li>Introduction to engineering</li>
+                     <li>Economics</li>
+                     <li>Mathematics for engineering</li>
+                  </ul>
+               </p> 
+                 
+               </div>
+            </div>
 
+            <div class="item" id="item_competences_langues">
+               <h6><strong>Compétences</strong></h6>
+               <div class="competences">
+               <div class="colonne" id="colonne_gauche">
+                  <ul>
+                     <li>Java</li>
+                     <li>SQL</li>
+                     <li>HTML / CSS</li>
+                     <li>JavaScript</li>
+                     <li>Figma</li>
+                  </ul>
+               </div>
+            
 
+               <div class="colonne" id="">
+                  <ul>
+                     <li>Orateur</li>
+                     <li>Sociable</li>
+                     <li>Dynamique</li>
+                     <li>Autodidacte</li>
+                  </ul>
+               </div>
+            </div>
+               <div class="langues">
+                  <h6><strong>Langues</strong></h6>
+                  <ul>
+                     <li>Français /langue maternelle</li>
+                     <li>Anglais / C1</li>
+                     <li>Espagnol / B2</li>
+                  </ul>
+               </div> 
+                 
+               
+            </div>
+         
 
       </div>
 

@@ -21,9 +21,9 @@ footer {
 	justify-content: space-around;
 	text-align: center;
 	height: 5vw;
-	position: fixed;
-	bottom: 0;
 	width: 100%;
+	
+	
 }
 
 hr {
@@ -167,8 +167,8 @@ hr {
 }
 
 .bodyCV{
-
-	height: 100%;
+	
+	min-height: 100vh;
 	background-color: rgb(230, 218, 205, 1);
 	display: flex;
 	align-items: center;
@@ -178,14 +178,19 @@ hr {
 }
 
 .item{
-	width: 55vw;
+	width: 65vw;
 	height: 15vw;
 	background-color: white;
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-	margin-top: 4vw;
 	display: flex;
 	padding: 2vw;
 	justify-content: space-around;
+	margin-bottom: 4vw;
+	padding: 1vw;
+}
+
+#premier_item{
+	margin-top: 2vw;
 }
 
 .titre{
@@ -199,6 +204,7 @@ hr {
 
 .colonne{
 	margin-left: 1vw;
+	padding : 1vw;
 }
 
 #colonne_droite {
@@ -206,6 +212,11 @@ hr {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+}
+
+#colonne_logo{
+	display: flex;
+	align-items: center;
 }
 
 
@@ -225,11 +236,81 @@ hr {
 
 #itemESC{
 	height: 20vw;
-	text-align: justify;
+	
+}
+
+.titre_CV{
+	display: flex;
+	align-items: center;
+	margin-top: 4vw;
+	margin-bottom: 2vw;
+}
+
+.titre_section{
+	display: flex;
+	justify-content: space-between;
+	width: 55vw;
+	align-items: center;
+}
+
+
+.bouton_download_cv{
+	background-color: rgb(0, 80, 254, 1);
+	border-radius: 50px;
+	color: white;
+	height: 3vw;
+	width: 10vw;
+	border: 1px solid rgb(0, 80, 254, 1);
+	margin-left:3vw;
+	
+}
+
+.bouton_download_cv:hover{
+	background-color: white;
+	border-radius: 50px;
+	color: rgb(0, 80, 254, 1);
+	height: 3vw;
+	width: 10vw;
+	border: 1px solid rgb(0, 80, 254, 1);
+}
+
+#bouton_download_cv{
+	margin-right: 2vw;
+	width: auto;
+	text-decoration: none;
 }
 
 
 
 
+#experience{
+	margin-left: 2vw;
+}
 
 
+#item_L1PT{
+	height: 20vw;
+}
+
+#item_EPF{
+	height: 20vw;
+}
+
+#btn_en_savoir_plus {
+	margin-top: 2vw;
+}
+
+#formation{
+	margin-bottom: 2vw;
+}
+
+.competences{
+	display: flex;
+	justify-content: space-around;
+}
+
+#item_competences_langues{
+	height: 25vw;
+	display: flex;
+	flex-direction: column;
+}
