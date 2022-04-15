@@ -1,4 +1,7 @@
-@font-face {
+
+/* /!\ COMMUN À TOUTES LES PAGES /!\ */ 
+
+@font-face {   
     font-family: 'Heebo';
     src: url('Heebo/Heebo-VariableFont_wght.ttf');
 }
@@ -47,10 +50,31 @@ hr {
 	color: rgb(0, 80, 254, 1);
 }
 
-.footerElement {
-	
+.logoFooter{
+	width: 1.5vw;
+	height: 1.5vw;
 }
 
+.boutton_bleu{
+	background-color: rgb(0, 80, 254, 1);
+	border-radius: 50px;
+	color: white;
+	height: 3vw;
+	width: 10vw;
+	border: 1px solid rgb(0, 80, 254, 1);
+	margin-left:3vw;
+}
+
+.boutton_bleu:hover{
+	background-color: white;
+	border-radius: 50px;
+	color: rgb(0, 80, 254, 1);
+	height: 3vw;
+	width: 10vw;
+	border: 1px solid rgb(0, 80, 254, 1);
+}
+
+/* /!\ CSS PAGE INDEX /!\ */
 .leftPart {
 	background-color: rgb(230, 218, 205, 1);
 	width : 30%;
@@ -63,11 +87,6 @@ hr {
 	justify-content: center;
 	flex-direction: column;
 	
-}
-
-.logoFooter{
-	width: 1.5vw;
-	height: 1.5vw;
 }
 
 .home_texte{
@@ -97,32 +116,11 @@ hr {
 	height: 10vw;
 	border-radius: 50%;
 	margin-top: 2vw;
-
 }
 
 #home_card_nom {
 	margin-top: 2vw;
 }
-
-.boutton_bleu{
-	background-color: rgb(0, 80, 254, 1);
-	border-radius: 50px;
-	color: white;
-	height: 3vw;
-	width: 10vw;
-	border: 1px solid rgb(0, 80, 254, 1);
-	margin-left:3vw;
-}
-
-.boutton_bleu:hover{
-	background-color: white;
-	border-radius: 50px;
-	color: rgb(0, 80, 254, 1);
-	height: 3vw;
-	width: 10vw;
-	border: 1px solid rgb(0, 80, 254, 1);
-}
-
 
 .boutons_accueil{ 
 	display: flex;
@@ -187,7 +185,16 @@ hr {
 	justify-content: space-around;
 	margin-bottom: 4vw;
 	padding: 1vw;
+	-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
 }
+
+.item:hover {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
 
 #premier_item{
 	margin-top: 2vw;
@@ -234,8 +241,8 @@ hr {
 	align-self: center;
 }
 
-#itemESC{
-	height: 20vw;
+#item_ESC{
+	height: 18vw;
 	
 }
 
@@ -259,9 +266,11 @@ hr {
 	border-radius: 50px;
 	color: white;
 	height: 3vw;
-	width: 10vw;
+	width: 13vw !important;
 	border: 1px solid rgb(0, 80, 254, 1);
 	margin-left:3vw;
+	text-align: center;
+	padding-top: 0.5vw;
 	
 }
 
@@ -310,7 +319,9 @@ hr {
 }
 
 #item_competences_langues{
-	height: 25vw;
+	height: 22vw;
 	display: flex;
 	flex-direction: column;
+	padding-left: 2vw;
+	padding-top: 3vw;
 }
