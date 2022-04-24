@@ -109,7 +109,6 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-
 }
 
 .photo_profil{
@@ -342,9 +341,10 @@ hr {
 
 
 .container{
-	max-width: 800px;
+	max-width: 90vw;
 	margin: 0 auto;
 	padding: 50px;
+	
 }
 
 .slider div.projet{
@@ -353,7 +353,7 @@ hr {
 }
 
 div.active{
-	display: block !important;
+	display: flex !important;
 	animation: fade 0.8s;
 }
 
@@ -383,5 +383,60 @@ div.active{
 }
 
 
+#premier_projet {
+	height: 20vw;
+	
+}
 
+.projet{
+	width: 90vw;
+	height: 30vw;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	display: flex;
+	padding: 2vw;
+	margin-bottom: 4vw;
+	
+}
+
+.description_projet{
+	width: 60%;
+	height: 100%;
+}
+
+.div_image_projet{
+	width: 40%;
+	height: 100%;
+	background-color: rgba(196, 196, 196);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.p_titre_projet{
+	color: blue;
+	margin: 1.5vw;
+	margin-bottom: 0.1vw;
+}
+
+.p_position_projet{
+	margin-left: 1.5vw;
+	font-style: italic;
+}
+
+.p_description_projet{
+	margin-left: 1.5vw;
+}
+
+.p_technos_utilisees{
+	margin-left: 1.5vw;
+}
+
+.image_projet {
+	width: auto;
+	height: auto;
+	max-width: 20vw;
+	max-height: 20vw;
+}
 
