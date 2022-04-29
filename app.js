@@ -33,3 +33,4 @@ function slidePrecedente() {
 }
 
 precedent.addEventListener('click', slidePrecedente);
+

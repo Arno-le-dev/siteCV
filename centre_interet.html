@@ -12,7 +12,7 @@
    </head>
    <header> 
    		
-      <div class="entete"> 	
+      <div id="home" class="entete" onclick="window.location.href='file:///Users/arnobruno/Documents/Code/siteCV/index.html'"> 	
       <div class="carre_entete">
       </div>		
          <p><strong>Arno BRUNO</strong> / Développeur Junior</p>
@@ -52,18 +52,43 @@
    
    
   </div>
-  <div class="modal_container">
-   <div class="modal">
-      <h1>Modal</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
-         galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
-         the leap into electronic typesetting, remaining essentially unchanged.</p>
-         <button id="close">Close me</button>
+ 
+  <!-- The Modal -->
+<div id="modalExpedition" class="modal">
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span id="closeModalExpedition" class="close">&times;</span>
+
+     <p>Passionné par les récits de Mike Horn, j’adore me lancer dans des expéditions. Que ce soit en vélo, à pied ou en kayak j’aime repousser mes limites. Au delà de l’aspect sportif, j’apprécie également les rencontres faites tout au long de mes différents périples. 
+J’ai eu l’occasion de de voyager en vélo en Corse mais également dans le Sud-Ouest de la France. Aussi, j’ai descendu une partie de la Loire en kayak. La prochaine étape ? Apprendre à naviguer afin de pouvoir partir encore plus loin !</p>
    </div>
+ 
+ </div>
+
+ <div id="modalEnvironnement" class="modal">
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span  id="closeModalEnvironnement" class="close">&times;</span>
+
+     <p>Passionné par les récits de Mike Horn, j’adore me lancer dans des expéditions. Que ce soit en vélo, à pied ou en kayak j’aime repousser mes limites. Au delà de l’aspect sportif, j’apprécie également les rencontres faites tout au long de mes différents périples. 
+J’ai eu l’occasion de de voyager en vélo en Corse mais également dans le Sud-Ouest de la France. Aussi, j’ai descendu une partie de la Loire en kayak. La prochaine étape ? Apprendre à naviguer afin de pouvoir partir encore plus loin !</p>
+   </div>
+ 
+ </div>
+
+ <div id="modalSport" class="modal">
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span  id="closeModalSport" class="close">&times;</span>
+
+     <p>Passionné par les récits de Mike Horn, j’adore me lancer dans des expéditions. Que ce soit en vélo, à pied ou en kayak j’aime repousser mes limites. Au delà de l’aspect sportif, j’apprécie également les rencontres faites tout au long de mes différents périples. 
+J’ai eu l’occasion de de voyager en vélo en Corse mais également dans le Sud-Ouest de la France. Aussi, j’ai descendu une partie de la Loire en kayak. La prochaine étape ? Apprendre à naviguer afin de pouvoir partir encore plus loin !</p>
+   </div>
+ 
+ </div>
+
 </div>
-</div>
-   
+   <script src="centre_interet.js"></script>
 </body>
    		<!-- DEBUT FOOTER -->
          <footer>
@@ -77,8 +102,8 @@
             </div>
             <div class="footerElement">
                <p><strong>En ligne</strong></p>
-               <img class="logoFooter" src="images/logoGithub.png" alt="Logo Github" />
-               <img class="logoFooter" src="images/logoLinkedin.png" alt="Logo Github" />
+               <img class="logoFooter" src="images/logoGithub.png" alt="Logo Github" onclick="window.open('https://github.com/Arno-le-dev')"/>
+               <img class="logoFooter" src="images/logoLinkedin.png" alt="Logo Github" onclick="window.open('https://www.linkedin.com/in/arno-bruno/')"/>
             </div>    
          </footer>
                <!-- FIN FOOTER -->
