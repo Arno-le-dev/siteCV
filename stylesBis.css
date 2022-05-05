@@ -1,3 +1,4 @@
+/* balise commune */ 
 body {
     display: flex;
     flex-direction: column;
@@ -21,10 +22,12 @@ body {
     flex: 1 0 auto;	
   }
 
+/* Header */ 
+
   header{
     display: flex;
 	justify-content: space-between;
-	height: 5vw;
+	height: 7vh;
 	align-items: center;
   }
 
@@ -34,7 +37,7 @@ body {
 
 .carre_entete{
     width  : 1.5vw;
-    height : 1.5vw;
+    height : 2.5vh;
     background : rgb(0, 80, 254, 1);
     margin-right: 1vw;
     margin-left: 1vw;
@@ -50,6 +53,25 @@ body {
 	color: rgb(0, 80, 254, 1);
 }
 
+/* Footer */ 
+
+footer{
+    display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+	margin-top: 1vh;
+	margin-bottom: 0px;
+}
+
+.footerElement {
+	width: 33%;	
+}
+
+
+/* MAIN PAGE INDEX */ 
+
+
 .leftPart {
 	background-color: rgb(230, 218, 205, 1);
 	width : 30%;
@@ -64,7 +86,7 @@ body {
 }
 
 .home_card{
-	height: 25vw; 
+	height: 45vh; 
 	width: 21vw; 
 	background-color: rgb(244, 236, 230, 1);
 	display: flex;
@@ -78,17 +100,17 @@ body {
 
 .photo_profil{
 	width: 10vw;
-	height: 10vw;
+	height: auto;
 	border-radius: 50%;
-	margin-top: 2vw;
+	margin-top: 2.5vh;
 }
 
 #home_card_nom {
-	margin-top: 2vw;
+	margin-top: 2.5vh;
 }
 
 hr {
-	height: 3vw;
+	height: 5vh;
 	width: 8vw;
 	color: rgb(0, 80, 254, 1); 
 }
@@ -110,7 +132,7 @@ hr {
 }
 
 #card_logo{
-	margin-top: 1vw;
+	margin-top: 2.5vh;
 	margin-left: 2vw;
 }
 
@@ -119,8 +141,8 @@ hr {
 }
 
 .logoFooter{
-	width: 1.5vw;
-	height: 1.5vw;
+	width: 2vw;
+	height: 3.5vh;
 }
 
 .logoFooter:hover{
@@ -146,13 +168,59 @@ hr {
 	background-color: rgb(0, 80, 254, 1);
 	border-radius: 50px;
 	color: white;
-	height: 3vw;
+	height: 5vh;
 	width: 10vw;
 	border: 1px solid rgb(0, 80, 254, 1);
 	margin-left:3vw;
 }
 
 .bouton_bleu:hover{
+	background-color: white;
+	color: rgb(0, 80, 254, 1);
+	border: 1px solid rgb(0, 80, 254, 1);
+}
+
+/* MAIN PAGE CV */ 
+
+#mainCV {	
+        min-height: 100vh;
+        background-color: rgb(230, 218, 205, 1);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+
+.titre_CV{
+	display: flex;
+	align-items: center;
+	margin-top: 4vw;
+	margin-bottom: 2vw;
+}
+
+.titre_section{
+	display: flex;
+	justify-content: space-between;
+	width: 55vw;
+	align-items: center;
+}
+
+#experience{
+	margin-left: 2vw;
+}
+
+.bouton_download_cv{
+	background-color: rgb(0, 80, 254, 1);
+	border-radius: 50px;
+	color: white;
+	height: 3vw;
+	width: 13vw !important;
+	border: 1px solid rgb(0, 80, 254, 1);
+	margin-left:3vw;
+	text-align: center;
+	padding-top: 0.5vw;	
+}
+
+.bouton_download_cv:hover{
 	background-color: white;
 	border-radius: 50px;
 	color: rgb(0, 80, 254, 1);
@@ -161,15 +229,94 @@ hr {
 	border: 1px solid rgb(0, 80, 254, 1);
 }
 
-footer{
-    display: flex;
-	justify-content: space-around;
-	text-align: center;
-	width: 100%;
-	margin-top: 1vh;
-	margin-bottom: 0px;
+#bouton_download_cv{
+	margin-right: 2vw;
+	width: auto;
+	text-decoration: none;
 }
 
-.footerElement {
-	width: 33%;	
+.item{
+	width: 65vw;
+	height: 15vw;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	display: flex;
+	padding: 2vw;
+	justify-content: space-around;
+	margin-bottom: 4vw;
+	padding: 1vw;
+	-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
+}
+
+.item:hover {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+#premier_item{
+	margin-top: 2vw;
+}
+
+.colonne{
+	margin-left: 1vw;
+	padding : 1vw;
+}
+
+#colonne_logo{
+	display: flex;
+	align-items: center;
+}
+
+#logoOBS{
+	width: 9vw;
+	height: auto;
+	align-self: center;
+}
+
+#colonne_droite {
+	margin-top: 2.8vw;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.date{
+	color: rgb(0, 80, 254, 1);
+}
+
+#item_ESC{
+	height: 18vw;	
+}
+
+
+#item_L1PT{
+	height: 20vw;
+}
+
+#formation{
+	margin-bottom: 2vw;
+}
+
+#item_EPF{
+	height: 20vw;
+}
+
+#btn_en_savoir_plus {
+	margin-top: 2vw;
+}
+
+#item_competences_langues{
+	height: 22vw;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2vw;
+	padding-top: 3vw;
+}
+
+.competences{
+	display: flex;
+	justify-content: space-around;
 }

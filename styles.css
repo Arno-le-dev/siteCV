@@ -228,15 +228,12 @@ hr {
 	cursor: pointer;
 }
 
-.bodyCV{
-	
+.bodyCV{	
 	min-height: 100vh;
 	background-color: rgb(230, 218, 205, 1);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
-
 }
 
 .item{
@@ -306,8 +303,7 @@ hr {
 }
 
 #item_ESC{
-	height: 18vw;
-	
+	height: 18vw;	
 }
 
 .titre_CV{
@@ -334,8 +330,7 @@ hr {
 	border: 1px solid rgb(0, 80, 254, 1);
 	margin-left:3vw;
 	text-align: center;
-	padding-top: 0.5vw;
-	
+	padding-top: 0.5vw;	
 }
 
 .bouton_download_cv:hover{
