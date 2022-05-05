@@ -9,6 +9,11 @@
 body{
    display: flex;
    flex-direction: column;  
+   padding-bottom: 0px;
+
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
 }
 
 header {
@@ -16,30 +21,73 @@ header {
 	justify-content: space-between;
 	height: 5vw;
 	align-items: center;
+
+	flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+@media screen and (max-width: 1000px)
+{
+    header {
+		height: 2vw;
+	}
+	p {
+		font-size: small;
+	}
+	button {
+		font-size: small;
+	}
+	footer{
+	height: 2vw;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+    header {
+		height: 1.5vw;
+	}
+	p {
+		font-size: x-small;
+	}
+	button {
+		font-size: x-small;
+	}
+	footer{
+		height: 1vw;
+		}
 }
 
 footer {
-	background-color: white; 
+	background-color: blue; 
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
-	height: 5vw;
 	width: 100%;
-	margin-top: 1vw;
+	margin-top: 1vh;
+	margin-bottom: 0px;
 	
-	
+	flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
 }
 
 hr {
-	height: 3px;
+	height: 3vw;
 	width: 8vw;
 	color: rgb(0, 80, 254, 1); 
 }
 
 .body{
-	height: 43vw;
+	height: 70%;
 	display: flex;
-	
+	flex: 1 0 auto;
+
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;	
 }
 
 .boutonNav {
@@ -52,6 +100,11 @@ hr {
 	color: rgb(0, 80, 254, 1);
 }
 
+.footerElement {
+	width: 33%;
+	background-color: green;	
+}
+
 .logoFooter{
 	width: 1.5vw;
 	height: 1.5vw;
@@ -61,7 +114,7 @@ hr {
 	cursor: pointer;
 }
 
-.boutton_bleu{
+.bouton_bleu{
 	background-color: rgb(0, 80, 254, 1);
 	border-radius: 50px;
 	color: white;
@@ -104,9 +157,6 @@ hr {
 }
 
 .home_card{
-	position: absolute;
-	top: 14vw; 
-	left: 18vw;
 	height: 25vw; 
 	width: 21vw; 
 	background-color: rgb(244, 236, 230, 1);
@@ -114,6 +164,9 @@ hr {
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	position: relative;
+	left: -25vw;
+	top: 5vw;
 }
 
 .photo_profil{
