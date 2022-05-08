@@ -394,7 +394,6 @@ hr {
 	box-sizing: border-box;
 }
 
-
 .container{
 	max-width: 100%;
 	margin: 0 auto;
@@ -465,9 +464,7 @@ div.active{
 
 .description_projet{
 	width: 60%;
-	height: 100%;
-	
-	
+	height: 100%;	
 }
 
 .div_image_projet{
@@ -513,7 +510,6 @@ div.active{
 
 .slideshow{
 	display: flex;
-	
 }
 .rond_slideshow{
 	width  : 1.5vw;

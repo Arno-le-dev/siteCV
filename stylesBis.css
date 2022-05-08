@@ -98,6 +98,11 @@ footer{
 	top: 5vw;
 }
 
+.hello_buttons{
+	position: relative;
+	top: -23vh;
+}
+
 .photo_profil{
 	width: 10vw;
 	height: auto;
@@ -127,8 +132,11 @@ hr {
 	width: 100%;
 	height: 100%;
 	display: flex; 
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 	background-color: white;
+	padding-left: 4vw;
+	padding-right: 4vw;
 }
 
 #card_logo{
@@ -141,8 +149,8 @@ hr {
 }
 
 .logoFooter{
-	width: 2vw;
-	height: 3.5vh;
+	width: 30px;
+	height: 30px;
 }
 
 .logoFooter:hover{
@@ -193,8 +201,8 @@ hr {
 .titre_CV{
 	display: flex;
 	align-items: center;
-	margin-top: 4vw;
-	margin-bottom: 2vw;
+	margin-top: 6vh;
+	margin-bottom: 4vh;
 }
 
 .titre_section{
@@ -212,20 +220,18 @@ hr {
 	background-color: rgb(0, 80, 254, 1);
 	border-radius: 50px;
 	color: white;
-	height: 3vw;
+	height: 5vh;
 	width: 13vw !important;
 	border: 1px solid rgb(0, 80, 254, 1);
 	margin-left:3vw;
 	text-align: center;
-	padding-top: 0.5vw;	
+	padding-top: 0.8vh;	
 }
 
 .bouton_download_cv:hover{
 	background-color: white;
-	border-radius: 50px;
 	color: rgb(0, 80, 254, 1);
-	height: 3vw;
-	width: 10vw;
+	
 	border: 1px solid rgb(0, 80, 254, 1);
 }
 
@@ -237,7 +243,7 @@ hr {
 
 .item{
 	width: 65vw;
-	height: 15vw;
+	height: 26vh;
 	background-color: white;
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 	display: flex;
@@ -257,7 +263,7 @@ hr {
 		}
 
 #premier_item{
-	margin-top: 2vw;
+	margin-top: 4vh;
 }
 
 .colonne{
@@ -320,3 +326,242 @@ hr {
 	display: flex;
 	justify-content: space-around;
 }
+
+/* PAGE CV */
+
+.container{
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: rgb(230, 218, 205, 1);
+}
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.slider div.projet{
+	max-width: 90%;
+	display: none;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projet{
+	width: 90vw;
+	height: 30vw;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	display: flex;
+	margin-bottom: 1vw;
+}
+
+.titre_projets{
+	display: flex;
+	align-items: center;
+	margin-top: 1.5vw;
+	margin-bottom: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+	width: 13vw;
+}
+
+div.active{
+	display: flex !important;
+	animation: fade 0.8s;
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes frame {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.description_projet{
+	width: 60%;
+	height: 100%;	
+}
+
+.p_titre_projet{
+	color: blue;
+	margin: 1.5vw;
+	margin-bottom: 0.1vw;
+	margin-left: 2vw;
+}
+
+.p_position_projet{
+	margin-left: 1.5vw;
+	font-style: italic;
+	margin-left: 2vw;
+}
+
+.p_description_projet{
+	margin-left: 1.5vw;
+	margin-left: 2vw;
+}
+
+.p_technos_utilisees{
+	margin-left: 1.5vw;
+	margin-left: 2vw;
+}
+
+.div_image_projet{
+	width: 40%;
+	height: 100%;
+	background-color: rgba(201, 202, 225, 0.463);
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.image_projet {
+	width: auto;
+	height: auto;
+	max-width: 20vw;
+	max-height: 20vw;
+}
+
+.cont-btn {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.btn-nav {
+	font-size: 50px;
+	cursor: pointer;	
+}
+
+.slideshow{
+	display: flex;
+}
+.rond_slideshow{
+	width  : 1.5vw;
+	height : 1.5vw;
+	border: 1.5px solid rgb(0, 80, 254, 1);
+	border-radius: 50%;
+
+	margin-left: 1vw ;
+	margin-right: 1vw;
+  }
+
+  div.rond_slideshow.active {
+	background-color: rgb(0, 80, 254, 1);
+  }
+
+  #premier_projet {
+	height: 20vw;	
+}
+
+/* PAGE CENTRE D INTERETS */
+
+.titre_centres_interets{
+	display: flex;
+	align-items: center;
+	margin-top: 1.5vw;
+	margin-bottom: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+	width: 27vw;
+}
+
+.p_description_CI_accueil{
+	text-align: justify;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.div_CI_image_buttons {
+	display: flex;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+.image_buttons_CI {
+	width: 25vw;
+	height: 25vw;
+	color: beige;
+	border: none;
+	font-size: x-large;	
+	-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
+}
+
+
+.image_buttons_CI:hover{
+	opacity: 0.8;
+	-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+}
+
+#image_buttons_CI_expedition{
+	background-image: url('images/image_expedition.JPG');
+	background-size: 25vw;
+}
+
+#image_buttons_CI_environnement{
+	background-image: url('images/image_environnement2.jpeg');
+	background-size: 3èvw;
+}
+
+#image_buttons_CI_sport{
+	background-image: url('images/image_sport.JPG');
+	background-size: 26vw;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+    /* Modal Content/Box */
+	.modal-content {
+		background-color: #fefefe;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%; /* Could be more or less, depending on screen size */
+	  }
+
+	  .close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	  }
+	  
+	  .close:hover,
+	  .close:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	  }
+
+	  .body_centres_interets {
+		background-color: rgba(230, 218, 205, 1);
+	}
+
+	
